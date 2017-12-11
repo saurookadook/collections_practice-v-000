@@ -60,8 +60,10 @@ def find_a(array)
 end
 
 def sum_array(array)
-  until array.length == 1
-    array[1] = (array[1] + array[0])
-    array.shift
+  array.sort do |a, b|
+    until array.length == 1
+      b = (b + a)
+      array.shift
+    end
   end
 end
