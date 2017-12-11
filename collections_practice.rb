@@ -58,17 +58,3 @@ def find_a(array)
     word.start_with?("a")
   end
 end
-
-def sum_array(array)
-  until array.length == 1
-    array.sort do |a, b|
-      a + b
-    end
-end
-
-def sum_array(array)
-  until array.length == 1
-    array[1] = (array[1] + array[0])
-    array.shift
-  end
-end
