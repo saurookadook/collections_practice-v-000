@@ -60,10 +60,7 @@ def find_a(array)
 end
 
 def sum_array(array)
-  array.sort do |a, b|
-    until array.length == 1
-      b = (b + a)
-      array.shift
-    end
+  array.inject do |sum, x|
+    sum + x 
   end
 end
