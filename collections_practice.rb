@@ -66,9 +66,9 @@ def sum_array(array)
     end
 end
 
-# def sum_array(array)
-#   until array.length == 1
-#     array[1] = (array[1] + array[0])
-#     array.shift
-#   end
-# end
+def sum_array(array)
+  until array.length == 1
+    array[1] = (array[1] + array[0])
+    array.shift
+  end
+end
